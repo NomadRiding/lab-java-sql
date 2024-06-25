@@ -75,7 +75,7 @@ VALUES
   SELECT AVG(Total_Aircraft_Seats) AS average_number_of_seats FROM airline;
  
  
- SELECT Status, AVG(Total_Flight_Mileage) AS average_miles_flown FROM customers GROUP BY Status;
+ SELECT Status, AVG(Total_Flight_Mileage) AS average_flight_distance FROM customers GROUP BY Status;
 
 SELECT Status, Max(Total_Flight_Mileage) AS max_number_of_miles_flown_by_status FROM customers GROUP BY Status;
 
