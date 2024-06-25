@@ -79,7 +79,9 @@ VALUES
 
 SELECT Status, Max(Total_Flight_Mileage) AS max_number_of_miles_flown_by_status FROM customers GROUP BY Status;
 
-SELECT count(*) AS total_boeing_aircraft
+SELECT COUNT(*) AS total_boeing_aircraft;
+
+SELECT COUNT(*) AS flights_between_threeHundred_and_twoThousand FROM airline WHERE distance >= 300 AND distance <= 2000;
 
 SELECT c.Status, AVG(a.Flight_Mileage) AS average_flight_distance_booked_by_status FROM customers c JOIN airline a ON c.Id = a.Customer_Id GROUP BY c.Status;
 
